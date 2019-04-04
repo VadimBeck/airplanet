@@ -109,7 +109,7 @@
   text-align: left;
   padding-left: 20px;
   transition: .2s;
-  outline: none;
+  outline: 0;
   border: 1px solid transparent;
 }
 .feedback__submit::after{
@@ -126,7 +126,7 @@
   content: "";
   position: absolute;
   display: inline-block;
-  left: 120px;
+  right: 20px;
   width: 15px;
   height: 14px;
   background-image: url(../../img/submit_sprite.png);
@@ -139,7 +139,7 @@
   color: #4b73b5; 
 }
 .feedback__submit:focus{
-border-color: #4b73b5;
+  border-color: #4b73b5;
 }
 .feedback__submit:hover:after{
   opacity: 0;
