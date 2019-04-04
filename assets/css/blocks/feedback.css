@@ -26,6 +26,7 @@
   height: 45px;
   padding-left: 10px;
   border: 1px solid transparent;
+  outline: 0;
 }
 .feedback__input:focus, .feedback__textarea:focus {
   border-color: #4b73b5;
@@ -39,6 +40,7 @@
   padding: 6px 0 0 8px;
   border: 1px solid transparent;
   resize: none;
+  outline: 0;
 }
 
 .feedback__send{
@@ -107,6 +109,8 @@
   text-align: left;
   padding-left: 20px;
   transition: .2s;
+  outline: none;
+  border: 1px solid transparent;
 }
 .feedback__submit::after{
   content: "";
@@ -132,7 +136,10 @@
 }
 .feedback__submit:hover {
   background-color: #fff;
-  color: #4b73b5;
+  color: #4b73b5; 
+}
+.feedback__submit:focus{
+border-color: #4b73b5;
 }
 .feedback__submit:hover:after{
   opacity: 0;
