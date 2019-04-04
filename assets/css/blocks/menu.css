@@ -1,0 +1,90 @@
+.menu{
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.menu__item{
+  margin-bottom: 32px;
+}
+.menu__link{
+  position: relative;
+  text-decoration: none;
+  color: #4b73b5;
+  padding-left: 35px;
+  transition: 0.3s;
+}
+.menu__link::after{
+  content: "";
+  position: absolute;
+  display: block;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+.menu__link::before{
+  content: "";
+  position: absolute;
+  display: block;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+.menu__link--main:after{
+  width: 17px;
+  height: 18px;
+  background-image: url(../../img/icons/menu_sprite.png);
+  background-position: -96px -48px;
+  opacity: 0;
+}
+.menu__link--comments:after{
+  width: 20px;
+  height: 18px;
+  background-image: url(../../img/icons/menu_sprite.png);
+  background-position: -10px -48px;
+  opacity: 0;
+}
+.menu__link--team:after{
+  width: 23px;
+  height: 18px;
+  background-image: url(../../img/icons/menu_sprite.png);
+  background-position: -53px -10px;
+  opacity: 0;
+}
+.menu__link--main:before{
+  width: 17px;
+  height: 18px;
+  background-image: url(../../img/icons/menu_sprite.png);
+  background-position: -96px -10px;
+}
+.menu__link--comments:before{
+  width: 20px;
+  height: 18px;
+  background-image: url(../../img/icons/menu_sprite.png);
+  background-position: -50px -48px;
+}
+.menu__link--team:before{
+  width: 23px;
+  height: 18px;
+  background-image: url(../../img/icons/menu_sprite.png);
+  background-position: -10px -10px;
+}
+
+.menu__link--main:hover:after, .active.menu__link--main:after,
+.menu__link--comments:hover:after, .active.menu__link--comments:after,
+.menu__link--team:hover:after, .active.menu__link--team:after{
+ opacity: 1;
+}
+.menu__link--main:hover:before, .active.menu__link--main:before,
+.menu__link--comments:hover:before, .active.menu__link--comments:before,
+.menu__link--team:hover:before, .active.menu__link--team:before{
+ opacity: 0;
+}
+
+a.menu__link:hover, a.menu__link.active{
+  color: #000000;
+}

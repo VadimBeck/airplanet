@@ -1,0 +1,78 @@
+.company-contacts{
+  line-height: 1.6em;
+  display: block;
+}
+.company-contacts__phone{
+  font-size: 21px;
+  font-weight: bold;
+}
+.company-contacts__link{
+  position: relative;
+  display: inline-block;
+ }
+.company-contacts__text{
+  color: #d2def3;
+  text-decoration: underline;
+}
+.company-contacts__drop{
+  position: absolute;
+  width: 160px;
+  right: 0;
+  top: 40px;
+  line-height: 1.65em;
+  text-align: left;
+  padding: 10px 15px 10px 15px;
+  box-shadow: 0 0 10px #173b75;
+  background-color: #fff;
+  opacity: 0;
+  z-index: -1;
+}
+.company-contacts__work{
+  color: #4b73b5;
+  font-weight: bold;
+}
+.company-contacts__rest{
+  color: #000;
+}
+.company-contacts__link::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 150px;
+  height: 25px;
+  z-index: -1;
+}
+.company-contacts__link:after{
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  transform: rotate(45deg);
+  background-color: #fff;
+  border-radius: 3px 0;
+  right: 4px;
+  top: 31px;
+  opacity: 0;
+  z-index: -1;
+}
+.company-contacts__link:hover .company-contacts__text{
+  color: #fff;
+  transition: 0.4s;
+}
+.company-contacts__link:hover .company-contacts__drop{
+  opacity: 1;
+  transition: 0.4s;
+  right: 0;
+  top: 40px;
+  z-index: 1;
+}
+.company-contacts__link:hover:before{
+  z-index: 1;
+}
+.company-contacts__link:hover:after{
+  opacity: 1;
+  z-index: 1;
+  transition: .2s;
+}

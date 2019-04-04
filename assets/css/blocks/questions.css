@@ -1,0 +1,19 @@
+.questions{
+  min-height: 170px;
+  background-image: url(../../img/rectangle.jpg);
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.7em;
+}
+.questions__text{
+  width: 700px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+.questions__link{
+  font-weight: bold;
+  text-decoration: underline;
+}
+.questions__phone{
+  font-weight: bold;
+}

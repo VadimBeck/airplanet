@@ -1,0 +1,26 @@
+footer{
+  height:77px;
+  background-color: #4b73b5;
+  min-width: 1100px;
+  color: #ffffff;
+}
+.footer__content{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__author{
+  width: 30%;
+  margin-right: auto;
+}
+
+.footer__socials{
+  width: 30%;
+  margin-left: auto;
+  text-align: right;
+}
+/* .footer__logo{
+  align-self: center;
+} */
