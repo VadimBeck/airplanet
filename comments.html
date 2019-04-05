@@ -179,30 +179,36 @@
             <h2 class="content-title title-feedback">Оставить отзыв</h2>
             <div class="feedback__user">
               <div class="feedback__user-info">
-                <div class="feedback__user-name">Ваше имя</div>
-                <input class="feedback__input" type="text" placeholder="Андрей">
+                <label class="feedback__user-label">
+                  <div class="feedback__user-name">Ваше имя</div>
+                  <input class="feedback__input" type="text" placeholder="Андрей">
+                </label>
               </div>
               <div class="feedback__user-info">
-                <div class="feedback__user-url">Ссылка на профиль VK</div>
-                <input class="feedback__input" type="text" placeholder="vk.com/example">
+                <label class="feedback__user-label">
+                  <div class="feedback__user-url">Ссылка на профиль VK</div>
+                  <input class="feedback__input" type="text" placeholder="vk.com/example">
+                </label>
               </div>
             </div>
             <div class="feedback__text">
-              <div class="feedback__subtitle">Текст отзыва</div>
-              <textarea class="feedback__textarea" name="textarea">Мне понравилось</textarea>
+             <label class="feedback__text-label">
+                <div class="feedback__subtitle">Текст отзыва</div>
+                <textarea class="feedback__textarea" name="textarea">Мне понравилось</textarea>
+             </label>
             </div>
             <div class="feedback__send">
               <div class="feedback__question">
                 <div class="feedback__question-text">Отображать фото в отзыве?</div>
                 <div class="feedback__radio">
                   <label>
-                    <input name="radio" type="radio" class="radio__styled" checked>
+                    <input type="radio" name="radio" value="yes" class="feedback__radio-btn" checked>
                     <span class="feedback__check">Да</span>                    
                   </label>
                 </div>
                 <div class="feedback__radio">
                   <label>
-                    <input name="radio" type="radio" class="radio__styled">
+                    <input type="radio" name="radio" value="no" class="feedback__radio-btn">
                     <span class="feedback__check">Нет</span>
                   </label>
                 </div>

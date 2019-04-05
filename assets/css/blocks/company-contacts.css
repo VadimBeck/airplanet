@@ -40,7 +40,7 @@
   position: absolute;
   top: 100%;
   right: 0;
-  width: 150px;
+  width: 100px;
   height: 25px;
   z-index: -1;
 }
@@ -61,7 +61,8 @@
   color: #fff;
   transition: 0.4s;
 }
-.company-contacts__link:hover .company-contacts__drop{
+.company-contacts__link:hover .company-contacts__drop, 
+.company-contacts__link:focus .company-contacts__drop{
   opacity: 1;
   transition: 0.4s;
   right: 0;
@@ -71,7 +72,7 @@
 .company-contacts__link:hover:before{
   z-index: 1;
 }
-.company-contacts__link:hover:after{
+.company-contacts__link:hover:after,.company-contacts__link:focus:after{
   opacity: 1;
   z-index: 1;
   transition: .2s;
