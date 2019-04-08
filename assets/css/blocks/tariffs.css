@@ -1,22 +1,24 @@
-.tariffs{
+.price{
   margin-bottom: 33px;
 }
-.tariffs__list{
+.price__list{
   display: flex;
 }
-.tariffs__item{
+.price__item{
+  flex-basis: 250px;
+  padding: 40px 0; 
+}
+.tariff{
   text-align: center;
-  width: 250px;
-  padding: 40px 0;
   font-size: 18px;
   margin-right: 20px;
   border: 1px solid transparent;
   border-radius: 5px;
 }
-.tariffs__item:hover {
+.price__item:hover {
   border-color:  #e8e9ed;
 }
-.tariffs__logo{
+.tariff__logo{
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -26,36 +28,36 @@
   align-items: center;
   margin-bottom: 30px;
 }
-.tariffs__text{
+.tariff__text{
   margin: 0 25px 15px;
 }
-.tariffs__desc{
+.tariff__desc{
   display: inline-block;
   line-height: 1.7em;
   margin-bottom: 8px;
 }
-.tariffs__title{
+.tariff__title{
   text-transform: uppercase;
   font-size: 11px;
   font-weight: bold;
   letter-spacing: 0.2em;
   margin-bottom: 17px;
 }
-.tariffs__text-list{
+.tariff__text-list{
   text-align: left;
 }
-.tariffs__text-item{
+.tariff__text-item{
   margin-bottom: 10px;
 }
-.tariffs__text-item:before{
+.tariff__text-item:before{
   content: '•';
   margin-right: 20px;
 }
-.tariffs__price{
+.tariff__value{
   font-size: 54px;
   font-weight: normal;
 }
-.tariffs__price sub{
+.tariff__value sub{
   font-size: 60%;
   bottom:0.1em;
 }

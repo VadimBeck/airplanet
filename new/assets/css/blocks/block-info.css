@@ -1,0 +1,28 @@
+.block-info{
+  min-height: 170px;
+  background-image: url(../../img/pattern.png);
+  background-color: #4bb56b;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.7em; 
+}
+.block-info__text{
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 30px;  
+}
+.block-info__link{
+  font-weight: bold;
+  text-decoration: underline;
+}
+.block-info__phone{
+  font-weight: bold;
+}
+.block-info--aside{
+  background-color:#4b73b5;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.block-info--aside .block-info__text{
+  padding: 25px 13px;
+}

@@ -1,0 +1,141 @@
+.form {
+  width: 700px;
+  background-color: #f5f5f5;
+  margin: 60px auto;
+  padding: 35px 69px;
+  border-radius: 3px;
+}
+.form__row{
+  display: flex;
+  margin-bottom: 15px;
+}
+.form__block{
+  flex: 1;
+  margin-right: 20px;
+}
+.form__block:last-child{
+  margin-right: 0;
+}
+.form__sub{
+  margin-bottom: 5px;
+}
+.form-entry{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid transparent;
+  outline: 0;
+  border-radius: 3px;  
+}
+.form-entry:focus{
+  border-color: #4b73b5;
+}
+.form__input{
+  min-height: 45px;
+}
+.form__textarea{
+  resize: none;
+  min-height: 90px;
+}
+.form__controls{
+  display: flex;
+  justify-content: space-between;
+}
+.form__radio{
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  margin-right: 13px;
+}
+.form__radio-btn{
+  opacity: 0;
+}
+.form__radio-text{
+  margin-left: 11px;
+}
+.form__radio-text::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+.form__radio-text::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  top: 6px;
+  left: 6px;
+}
+.form__radio-btn:checked ~ .form__radio-text{
+  color: #4b73b5;
+}
+
+.form__radio-btn:checked ~ .form__radio-text::after{
+  border-color: #4b73b5;
+}
+.form__radio-btn:checked ~ .form__radio-text::before{
+  background-color: #4b73b5;
+}
+.form__submit{
+  position: relative;
+  width: 155px;
+  height: 45px;
+  border-radius: 3px;
+  margin-left: auto;
+  color: #fff;
+  background-color: #4b73b5;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: .2em;
+  margin-top: 4px;
+  text-align: left;
+  padding-left: 20px;
+  transition: .2s;
+}
+.form__submit::after{
+  content: "";
+  position: absolute;
+  display: inline-block;
+  right: 20px;
+  width: 15px;
+  height: 14px;
+  background-image: url(../../img/submit_sprite.png);
+  background-position: -45px -10px;
+}
+.form__submit::before{
+  content: "";
+  position: absolute;
+  display: inline-block;
+  right: 20px;
+  width: 15px;
+  height: 14px;
+  background-image: url(../../img/submit_sprite.png);
+  background-position: -10px -10px;
+  opacity: 0;
+  transition: .2s;
+}
+.form__submit:hover {
+  background-color: #fff;
+  color: #4b73b5; 
+}
+.form__submit:hover:after{
+  opacity: 0;
+}
+.form__submit:hover::before{
+  opacity: 1;
+}
+.form--wide{
+  width: 770px;
+  margin-left: 0;
+  padding: 31px 98px;
+  margin-bottom: 65px;
+}
+

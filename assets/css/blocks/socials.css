@@ -6,32 +6,54 @@
   font-weight: bold;
   margin-bottom: 8px;
 }
+.socials__list{
+  display: flex;
+}
 .socials__item{
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
   background-color: #d2def3;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  text-align: center;
-  margin-right: 7px;
+  margin-right: 10px;
   font-size: 0;
 }
 .socials__item:hover{
   background-color: #fff;
 }
-.socials__list-link{
+.socials__link{
   width: 100%;
   height: 100%;
-  display: inline-block;
+  display: flex;
+  position: relative;
 }
-.socials__list-link:before{
+.socials__link:before{
   content: "";
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%; 
+  display: block;
+  margin: auto;
+  background-image: url(../../img/socials/socials.png);
 }
-.socials__list-icon{
-  vertical-align: middle;
+.socials__link--vk::before{
+  width: 12px;
+  height: 7px;
+  background-position: -41px -39px;
+}
+.socials__link--fb::before{
+  width: 6px;
+  height: 13px;
+  background-position: -77px -10px;
+}                 
+.socials__link--google::before{
+  width: 15px;
+  height: 9px;
+  background-position: -10px -10px;
+}                  
+.socials__link--tw::before{
+  width: 11px;
+  height: 9px;
+  background-position: -10px -39px;
+}                
+.socials__link--mail::before{
+  width: 12px;
+  height: 9px;
+  background-position: -45px -10px;
 }

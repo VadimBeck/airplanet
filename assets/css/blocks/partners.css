@@ -1,18 +1,15 @@
 .partners{
-  margin-bottom: 34px;
+  margin-bottom: 38px;
 }
 .partners__list{
   display: flex;
   flex-wrap: wrap;
-  padding-left: 41px;
+  justify-content: space-between;
 }
 .partners__item{
-  width: 200px;
-  margin-right: 100px;
+  flex: 0 1 280px;
+  height: 64px;
   margin-bottom: 65px;
-}
-.partners__item:nth-child(3n){
-  margin-right: 0;
 }
 .partners__link{
   height: 100%;
@@ -25,4 +22,6 @@
 }
 .partners__img{
  margin: auto;
+ max-width: 100%;
+ max-height: 100%;
 }
