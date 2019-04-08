@@ -3,8 +3,8 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 5px;
-  background-image:url(https://vadimbeck.github.io/new/assets/img/airplane.png),
-  url(https://vadimbeck.github.io/new/assets/img/sky.png);
+  background-image:url(../airplane.png),
+  url(../sky.png);
   background-repeat: no-repeat;
   background-position: center;
   background-blend-mode: color-burn;
@@ -18,7 +18,7 @@
   top: -20px;
   background-repeat: no-repeat;
   position: absolute;
-  background-image: url(https://vadimbeck.github.io/new/assets/img/plain.png);
+  background-image: url(../plain.png);
   animation: flying 3s 1s cubic-bezier(.25,.1,.25,1);
   animation-fill-mode: forwards;
 }
