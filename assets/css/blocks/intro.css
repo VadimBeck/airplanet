@@ -2,11 +2,10 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-image: url(../../img/intro-plain.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+  background: url(../../img/intro-plain.jpg) center center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }  
 .intro:before{
   content: "";
@@ -17,45 +16,46 @@
   opacity: .6;
 }
 .intro-logo{
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   display: inline-block;
   text-align: center;
   width: 210px;
   z-index: 1;
-  animation: bounce 1s 1s;
+  animation: bounce .9s 1s;
   transform-origin: center bottom;
   animation-fill-mode: forwards;
   opacity: 0;
 }
 @keyframes bounce {
-  from,
-  20%,
+  from {
+    transform: translate(0, 0);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  20%{
+    opacity: .8;
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
   53%,
-  80%  {
+  80%{   
+    transform: translate(0, 0);
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    transform: translate(-50%, -50%);
-  } 
+  }
   40%,
-  43% {
-    opacity: 0.8;
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    transform: translate(-50%, -80%);
-  }
-    70% {
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    transform: translate(-50%, -65%);
-  } 
-  90% {
-    transform: translate(-50%, -54%);
-  }
-  to {
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    transform: translate(-50%, -50%);
+  43% {    
+    transform: translate(0, -50px);
     opacity: 1;
-  }  
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  }
+  70% {   
+    transform: translate(0, -30px);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  }
+  90% {
+    transform: translate(0, -10px);
+  }
+  to{
+    transform: translate(0, 0);
+    opacity: 1;
+  }
 }
 .intro__logo-pic{
   display: inline-block;
@@ -69,8 +69,8 @@
   height: 45px;
   line-height: 45px;
   border-radius: 3px;
-  border: 1px solid #4b73b5;
   color: #4b73b5;
+  border: 1px solid currentColor;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: .2em;
