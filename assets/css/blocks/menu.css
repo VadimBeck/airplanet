@@ -16,7 +16,7 @@
   text-decoration: none;
   color: #4b73b5;
   padding-left: 35px;
-  transition: 0.3s;
+  transition:color 0.3s;
 }
 .menu__link::after{
   content: "";
